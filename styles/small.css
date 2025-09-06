@@ -85,7 +85,7 @@ header span {
     display: block;
     padding: 0.75rem 1rem;
     text-align: center;
-    color: var(--text-light);
+    color: black;
     background-color: var(--secondary-color);
     border-radius: 6px;
     text-decoration: none;
@@ -116,7 +116,7 @@ main h2 {
 
 section {
     background-color: var(--secondary-bg-color);
-    border: 1px solid var(--primary-darker-color);
+    border: 1px solid var(--text-dark);
     border-radius: 10px;
     margin-bottom: 1rem;
     box-shadow: 0 2px 6px gray;
@@ -171,15 +171,15 @@ section {
 .course-card.uncompleted {
     border: 2px solid red;
     background-color: rgb(250, 119, 119);
-    color: var(--text-light);
+    color: black;
 }
 
 
 /* FOOTER */
 footer {
     background-color: var(--secondary-color);
-    color: var(--text-light);
     text-align: center;
+    color: black;
     padding: 1rem;
     border-top: 2px solid gray;
 }
