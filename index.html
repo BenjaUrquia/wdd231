@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title></title>
+
+    <meta name="description" content="">
+    <meta name="author" content="Benjamin Urquia">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <!-- JS -->
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <img src="images/maySun.svg" alt="Logo" width="1" height="1">
+        <span>TITLE</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Chamber Site</a>
+            </li>
+            <li>
+                <a href="#">Final</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>H1</h1>
+        <section class="cert-sect">
+            <h2>Web and Computer Programming Certificate</h2>
+            <ul>
+                <li><button class="active" data-filter="all">All Courses</button></li>
+                <li><button data-filter="WDD">WDD Courses</button></li>
+                <li><button data-filter="CSE">CSE Courses</button></li>
+            </ul>
+            <p id="course-count"></p>
+            <div id="course-list"></div>
+        </section>
+        <section>
+            <h2>section 2</h2>
+        </section>
+        <section>
+            <h2>section 3</h2>
+        </section>
+    </main>
+
+    <footer>
+
+        <div class="socialMediaDiv">
+            <a href="https://github.com/BenjaUrquia/wdd231"><img src="images/gitHubIcon.svg" alt="gitHubIcon"></a>
+            <a href="https://www.linkedin.com/in/benjamín-urquia-0303a932b"><img src="images/linkedinIcon.svg"
+                    alt="linkedinIcon"></a>
+        </div>
+
+
+        <p>&copy; <span id="currentYear"></span> Benjamin Urquia, Argentina</p>
+        <p id="lastModified"></p>
+
+    </footer>
+
+</body>
+
+</html>
