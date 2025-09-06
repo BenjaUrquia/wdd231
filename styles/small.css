@@ -101,6 +101,7 @@ header span {
 main {
     padding: 1.5rem;
     background-color: var(--primary-color);
+    text-align: center;
 }
 
 main h1 {
