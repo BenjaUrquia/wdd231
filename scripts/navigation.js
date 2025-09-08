@@ -8,4 +8,13 @@ document.addEventListener("DOMContentLoaded", function () {
         navBar.classList.toggle('show');
     });
 
+    // Nav Wayfinding
+    const pageTitle = document.querySelector("main h1").textContent.trim();
+    const menuItems = document.querySelectorAll(".navigation a");
+
+    menuItems.forEach(link => {
+        if (link.textContent.trim() === pageTitle) {
+            link.classList.add("active");
+        }
+    });
 })
