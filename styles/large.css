@@ -32,4 +32,16 @@
     .navigation a {
         padding: 0.5rem 1rem;
     }
+
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto auto auto;
+        gap: .5rem;
+    }
+
+    main>h1,
+    .cert-sect {
+        grid-column: 1 / -1;
+    }
 }
