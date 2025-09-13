@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Nav Wayfinding
-    const pageTitle = document.querySelector("header span").textContent.trim();
+    const pageTitle = document.querySelector("main h1").textContent.trim();
     const menuItems = document.querySelectorAll(".navigation a");
 
     menuItems.forEach(link => {

@@ -1,4 +1,4 @@
-@media only screen and (min-width: 320px) {
+@media only screen and (min-width: 38rem) {
 
     body {
         grid-template-rows: auto auto 1fr auto;

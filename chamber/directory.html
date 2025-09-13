@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>W02 Assignment: Chamber Directory Page</title>
+    <title>Business Directory</title>
 
     <meta name="description"
         content="This page provides a list of local business and other organizations that belong to the chamber of commerce.">
@@ -46,7 +46,7 @@
 
     <header>
         <img src="images/chamb-withe-logo.svg" alt="rosario-chamber-logo">
-        <span>Business Directory</span>
+        <span>Chamber of Commerce Rosario City</span>
         <button id="ham-btn" class="hamburger"></button>
     </header>
 
@@ -68,13 +68,14 @@
     </nav>
 
     <main>
-        <section class="directory-sec">
+        <h1>Business Directory</h1>
+        <div class="directory-sec">
             <ul>
-                <li><button id="directory-btn" class="active" data-filter="list">Show List</button></li>
-                <li><button id="directory-btn" data-filter="grid">Show Grid</button></li>
+                <li><button class="active" data-filter="list">Show List</button></li>
+                <li><button data-filter="grid">Show Grid</button></li>
             </ul>
             <div id="directory-div"></div>
-        </section>
+        </div>
     </main>
 
     <footer>

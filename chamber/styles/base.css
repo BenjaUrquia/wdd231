@@ -73,7 +73,6 @@ header span {
 
 .navigation.show {
     display: flex;
-
 }
 
 .navigation ul {
@@ -109,6 +108,11 @@ main {
     padding: 1.5rem;
     background-color: var(--primary-bg-color);
     text-align: center;
+}
+
+h1 {
+    margin: 0;
+    padding: .5rem;
 }
 
 .member-card {
@@ -167,28 +171,28 @@ ul li {
     padding: 1rem;
 }
 
-#directory-btn {
+.directory-sec button {
     padding: 1rem;
     border-radius: 10px;
     border: 2px solid var(--primary-color);
 }
 
-#directory-btn:hover {
+.directory-sec button:hover {
     font-weight: bold;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     border: 2px solid var(--accent-color);
     color: var(--text-light);
 }
 
-#directory-btn.active {
-    background-color: var(--primary-color);
+.directory-sec button.active {
+    background-color: var(--secondary-color);
     border: 2px solid var(--accent-color);
     color: var(--text-light);
 }
 
 /* FOOTER */
 footer {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     text-align: center;
     color: var(--text-light);
     padding: 1rem;
