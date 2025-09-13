@@ -117,6 +117,10 @@ h1 {
     padding: .5rem;
 }
 
+h2 {
+    font-size: large;
+}
+
 .member-card {
     border: 2px solid var(--primary-color);
     padding: .5rem;

@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             card.innerHTML = `
         <img src="images/${member["icon-file"]}" alt="${member.name} logo">
-        <h3>${member.name}</h3>
+        <h2>${member.name}</h2>
         <p>${member.adress}</p>
         <p>📞 ${member.tel}</p>
         <p><strong>Membership Level:</strong> ${levelText}</p>
