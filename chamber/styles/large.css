@@ -22,4 +22,54 @@
         justify-content: left;
     }
 
+    /* HOME PAGE */
+
+    .home {
+        display: grid;
+        grid-template-rows: auto auto;
+    }
+
+    .weather-div {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+
+    .members-display {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    /*Events*/
+    #events {
+        flex-wrap: nowrap;
+    }
+
+    /* Weather */
+    #current-weather {
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    #events h2,
+    #weather-forecast h2,
+    #current-weather h2 {
+        flex-basis: auto;
+        align-self: flex-start;
+    }
+
+    #members-display {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+
+    #members-display>a {
+        grid-column: 1 / -1;
+    }
+
+    .spotlight-card {
+        grid-template-columns: 1fr 1.5fr;
+        gap: .5rem;
+    }
 }

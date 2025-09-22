@@ -5,10 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>W02 Assignment: Chamber Business Directory Page</title>
+    <title>W03 Assignment: Chamber Home Page</title>
 
-    <meta name="description"
-        content="This page provides a list of local business and other organizations that belong to the chamber of commerce.">
+    <meta name="description" content="">
     <meta name="author" content="Benjamin Urquia">
 
     <!-- CSS -->
@@ -19,7 +18,8 @@
     <!-- JS -->
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/directory.js"></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/members.js" defer></script>
 
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,12 +32,11 @@
     <link rel="icon" href="images/favicon.ico">
 
     <!-- Facebook Meta -->
-    <meta property="og:title" content="Chamber Directory Page">
-    <meta property="og:description"
-        content="This page provides a list of local business and other organizations that belong to the chamber of commerce.">
+    <meta property="og:title" content="Chamber Home Page">
+    <meta property="og:description" content="">
     <meta property="og:image"
         content="https://www.bcr.com.ar/sites/default/files/styles/lists/public/2018-03/rueda-_museo.jpg?itok=3cBMQfoK">
-    <meta property="og:url" content="https://benjaurquia.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://benjaurquia.github.io/wdd231/chamber/index.html">
 
 
 </head>
@@ -53,13 +52,13 @@
     <nav id="nav-bar" class="navigation">
         <ul>
             <li>
-                <a href="/chamber/index.html">Home</a>
+                <a href="#">Home</a>
             </li>
             <li>
                 <a href="#">Discover</a>
             </li>
             <li>
-                <a href="#">Business Directory</a>
+                <a href="/chamber/directory.html">Business Directory</a>
             </li>
             <li>
                 <a href="#">Join</a>
@@ -68,13 +67,40 @@
     </nav>
 
     <main>
-        <h1>Business Directory</h1>
-        <div class="directory-sec">
-            <ul>
-                <li><button class="active" data-filter="list">Show List</button></li>
-                <li><button data-filter="grid">Show Grid</button></li>
-            </ul>
-            <div id="directory-div"></div>
+        <h1>Home</h1>
+        <img src="images/hero-image-home.webp" alt="Hero-page" class="hero-img">
+        <div class="home">
+            <div class="weather-div">
+                <section id="events">
+                    <h2>Events</h2>
+                    <ul>
+
+                        <li>
+                            <h3>Business Workshop: Digital Marketing</h3>
+                            <p>Date: October 5, 2025</p>
+                            <p>Location: Tech Innovation Center</p>
+                        </li>
+
+                        <li>
+                            <h3>Annual Business Expo</h3>
+                            <p>Date: November 12, 2025</p>
+                            <p>Location: City Convention Center</p>
+                        </li>
+
+                        <li>
+                            <h3>Holiday Charity Gala</h3>
+                            <p>Date: December 10, 2025</p>
+                            <p>Location: Grand Hotel Ballroom</p>
+                        </li>
+                    </ul>
+                </section>
+                <section id="current-weather"></section>
+                <section id="weather-forecast"></section>
+                </section>
+            </div>
+            <div id="members-display">
+                <a href="/chamber/join.html">Join Now!</a>
+            </div>
         </div>
     </main>
 
