@@ -72,4 +72,23 @@
         grid-template-columns: 1fr 1.5fr;
         gap: .5rem;
     }
+
+    /* JOIN PAGE */
+
+    .joinMain {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .joinMain h1 {
+        grid-column: 1 / -1;
+    }
+
+    #membership-section {
+        margin-top: 2rem;
+    }
+
+    #membership-section {
+        height: fit-content;
+    }
 }

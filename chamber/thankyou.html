@@ -5,10 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>W02 Assignment: Chamber Business Directory Page</title>
+    <title>W03 Assignment: Chamber Home Page</title>
 
-    <meta name="description"
-        content="This page provides a list of local business and other organizations that belong to the chamber of commerce.">
+    <meta name="description" content="Home Page of the Rosario Chamber of Commerce">
     <meta name="author" content="Benjamin Urquia">
 
     <!-- CSS -->
@@ -19,7 +18,7 @@
     <!-- JS -->
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/directory.js"></script>
+    <script src="scripts/join.js" defer></script>
 
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,12 +31,11 @@
     <link rel="icon" href="images/favicon.ico">
 
     <!-- Facebook Meta -->
-    <meta property="og:title" content="Chamber Directory Page">
-    <meta property="og:description"
-        content="This page provides a list of local business and other organizations that belong to the chamber of commerce.">
+    <meta property="og:title" content="Chamber Home Page">
+    <meta property="og:description" content="">
     <meta property="og:image"
         content="https://www.bcr.com.ar/sites/default/files/styles/lists/public/2018-03/rueda-_museo.jpg?itok=3cBMQfoK">
-    <meta property="og:url" content="https://benjaurquia.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://benjaurquia.github.io/wdd231/chamber/index.html">
 
 
 </head>
@@ -66,31 +64,26 @@
             </li>
         </ul>
     </nav>
-
     <main>
-        <h1>Business Directory</h1>
-        <div class="directory-sec">
-            <ul>
-                <li><button class="active" data-filter="list">Show List</button></li>
-                <li><button data-filter="grid">Show Grid</button></li>
-            </ul>
-            <div id="directory-div"></div>
+        <div class="confirmation">
+            <h1>Thank You for Your Application!</h1>
+            <p><span>First Name:</span> <span id="firstName"></span></p>
+            <p><span>Last Name:</span> <span id="lastName"></span></p>
+            <p><span>Email:</span> <span id="email"></span></p>
+            <p><span>Mobile:</span> <span id="mobile"></span></p>
+            <p><span>Business Name:</span> <span id="organization"></span></p>
+            <p><span>Form Submitted:</span> <span id="timestamp"></span></p>
         </div>
     </main>
-
     <footer>
-
         <div class="socialMediaDiv">
             <a href="https://github.com/BenjaUrquia/wdd231"><img src="images/git-hub-icon.svg" alt="gitHubIcon"></a>
             <a href="https://www.linkedin.com/in/benjamín-urquia-0303a932b"><img src="images/linkedin-icon.svg"
                     alt="linkedinIcon"></a>
             <a href="https://www.facebook.com/benjaurquia34"><img src="images/facebook-icon.svg" alt="facebookIcon"></a>
         </div>
-
-
         <p>&copy; <span id="currentYear"></span> Benjamin Urquia, Argentina</p>
         <p id="lastModified"></p>
-
     </footer>
 </body>
 

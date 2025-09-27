@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>W03 Assignment: Chamber Join Page</title>
+
+    <meta name="description"
+        content="Join Page of the Rosario Chamber of Commerce, to join and be part of something bigger.">
+    <meta name="author" content="Benjamin Urquia">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <!-- JS -->
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Libre+Caslon+Display&family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- FAVICON -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Facebook Meta -->
+    <meta property="og:title" content="Chamber Join Page">
+    <meta property="og:description" content="">
+    <meta property="og:image"
+        content="https://www.bcr.com.ar/sites/default/files/styles/lists/public/2018-03/rueda-_museo.jpg?itok=3cBMQfoK">
+    <meta property="og:url" content="https://benjaurquia.github.io/wdd231/chamber/join.html">
+
+
+</head>
+
+<body>
+
+    <header>
+        <img src="images/chamb-withe-logo.svg" alt="rosario-chamber-logo">
+        <span>Chamber of Commerce Rosario</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li>
+                <a href="/chamber/index.html">Home</a>
+            </li>
+            <li>
+                <a href="#">Discover</a>
+            </li>
+            <li>
+                <a href="/chamber/directory.html">Business Directory</a>
+            </li>
+            <li>
+                <a href="/chamber/join.html">Join</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="joinMain">
+        <h1>Join</h1>
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>User Information</legend>
+                <label for="firstName">First Name:<input type="text" name="firstName" id="firstName"
+                        title="Enter your first name" autocomplete="given-name" required></label>
+
+                <label for="lastName">Last Name:<input type="text" name="lastName" id="lastName"
+                        title="Enter your last name" autocomplete="family-name" required></label>
+
+                <label for="email">Email Address:<input type="email" name="email" id="email"
+                        title="Enter your email address" autocomplete="email" placeholder="example@email.com"
+                        required></label>
+
+
+                <label for="phone">Mobile Phone:<input type="tel" name="phone" id="phone"
+                        title="Enter your mobile phone number" autocomplete="tel" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Organization Information</legend>
+                <label for="orgTitle">Organizational Title:<input type="text" name="orgTitle" id="orgTitle"
+                        title="Enter your organizational title" autocomplete="organization-title"
+                        pattern="[A-Za-z\s-]{7,}" required></label>
+
+                <label for="business">Business Name:<input type="text" name="business" id="business"
+                        title="Enter your organization name" autocomplete="organization" required></label>
+
+                <label for="description">Organization Description:<textarea name="description" id="description"
+                        title="Enter a brief description of your organization"></textarea></label>
+
+                <fieldset>
+                    <legend>Membership Level</legend>
+                    <label><input type="radio" name="membership" value="np"> NP Membership (Non-Profit)</label>
+                    <label><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
+                    <label><input type="radio" name="membership" value="silver"> Silver Membership</label>
+                    <label><input type="radio" name="membership" value="gold"> Gold Membership</label>
+
+                </fieldset>
+
+                <input type="hidden" name="timestamp" id="timestamp">
+            </fieldset>
+
+            <input type="submit" value="Send Application">
+        </form>
+
+        <section id="membership-section">
+            <h2>Membership Levels</h2>
+            <div class="membership-cards">
+
+                <div class="np-level">
+                    <h3>NP Membership</h3>
+                    <p>Non-Profit Organizations. Free membership.</p>
+                    <button class="modal-btn" data-modal="np-modal">Learn More</button>
+                </div>
+
+                <div class="bronze-level">
+                    <h3>Bronze Membership</h3>
+                    <p>Affordable entry with event access.</p>
+                    <button class="modal-btn" data-modal="bronze-modal">Learn More</button>
+                </div>
+
+                <div class="silver-level">
+                    <h3>Silver Membership</h3>
+                    <p>Greater visibility and discounts.</p>
+                    <button class="modal-btn" data-modal="silver-modal">Learn More</button>
+                </div>
+
+                <div class="gold-level">
+                    <h3>Gold Membership</h3>
+                    <p>Premium benefits and spotlight features.</p>
+                    <button class="modal-btn" data-modal="gold-modal">Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- MODALS -->
+        <dialog id="np-modal">
+            <h3>NP Membership Benefits</h3>
+            <ul>
+                <li>✔ Free membership for non-profits</li>
+                <li>✔ Basic directory listing.</li>
+            </ul>
+            <button class="close-btn">Close</button>
+        </dialog>
+
+        <dialog id="bronze-modal">
+            <h3>Bronze Membership Benefits</h3>
+            <ul>
+                <li>✔ Basic directory listing.</li>
+                <li>✔ Access to special networking events.</li>
+                <li>✔ Discounted training sessions.</li>
+            </ul>
+            <button class="close-btn">Close</button>
+        </dialog>
+
+        <dialog id="silver-modal">
+            <h3>Silver Membership Benefits</h3>
+            <ul>
+                <li>✔ Basic directory listing.</li>
+                <li>✔ Access to special networking events.</li>
+                <li>✔ Discounted training sessions.</li>
+                <li>✔ Priority event registration.</li>
+                <li>✔ Featured business spotlight.</li>
+            </ul>
+            <button class="close-btn">Close</button>
+        </dialog>
+
+        <dialog id="gold-modal">
+            <h3>Gold Membership Benefits</h3>
+            <ul>
+
+                <li>✔ Basic directory listing.</li>
+                <li>✔ Access to special networking events.</li>
+                <li>✔ Discounted training sessions.</li>
+                <li>✔ Priority event registration.</li>
+                <li>✔ Featured business spotlight.</li>
+                <li>✔ Premium advertising placement.</li>
+                <li>✔ Exclusive training and VIP events.</li>
+                <li>✔ Highest discount on all paid events.</li>
+
+            </ul>
+            <button class="close-btn">Close</button>
+        </dialog>
+    </main>
+    <footer>
+        <div class="socialMediaDiv">
+            <a href="https://github.com/BenjaUrquia/wdd231"><img src="images/git-hub-icon.svg" alt="gitHubIcon"></a>
+            <a href="https://www.linkedin.com/in/benjamín-urquia-0303a932b"><img src="images/linkedin-icon.svg"
+                    alt="linkedinIcon"></a>
+            <a href="https://www.facebook.com/benjaurquia34"><img src="images/facebook-icon.svg" alt="facebookIcon"></a>
+        </div>
+        <p>&copy; <span id="currentYear"></span> Benjamin Urquia, Argentina</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
