@@ -67,7 +67,7 @@
     </nav>
 
     <main class="joinMain">
-        <h1>Join</h1>
+        <h1 id="pageTitle">Join</h1>
         <form method="get" action="thankyou.html">
             <fieldset>
                 <legend>User Information</legend>
@@ -89,7 +89,7 @@
                 <legend>Organization Information</legend>
                 <label for="orgTitle">Organizational Title:<input type="text" name="orgTitle" id="orgTitle"
                         title="Enter your organizational title" autocomplete="organization-title"
-                        pattern="[A-Za-z\s-]{7,}" required></label>
+                        pattern="[A-Za-z\- ]{7,}" required></label>
 
                 <label for="business">Business Name:<input type="text" name="business" id="business"
                         title="Enter your organization name" autocomplete="organization" required></label>
