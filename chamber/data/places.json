@@ -1,0 +1,42 @@
+[
+    {
+        "title": "Flag Monument",
+        "address": "Santa Fe 581",
+        "description": "Since the late 19th century, plans began to take shape for the construction of a monument that would pay tribute to the spirit of independence and freedom championed by General Belgrano when he gave the fledgling nation its new flag."
+    },
+    {
+        "title": "Rosario Stock Exchange",
+        "address": "Córdoba 1402",
+        "description": "The Rosario Stock Exchange is a civil association founded in 1884. Its objective is to promote markets for products, capital, and other assets. It is supervised by the National Securities Commission."
+    },
+    {
+        "title": "Rambla Catalunya",
+        "address": "Av. Eudoro Carrasco 2544",
+        "description": "This is a public beach and coastal promenade in the north of the city. It is a free beach resort with a beach stretching over 600 meters. It has bars and restaurants, lifeguard services, security, and showers."
+    },
+    {
+        "title": "Santa Fe Sports Museum",
+        "address": "Ayacucho 4800",
+        "description": "The Santa Fe Sports Museum is a space dedicated to preserving the province's sporting heritage, its milestones, glories, and the sacred fire of the activity. It is a place for cultural gathering and reaffirmation, and is primarily intended to honor Santa Fe athletes who have written a history marked by great achievements."
+    },
+    {
+        "title": "City Center Rosario",
+        "address": "Battle y Ordóñez, Blvd. Oroño",
+        "description": "An entertainment center in the south of the city, with a casino, 5-star hotel, spa, and much more."
+    },
+    {
+        "title": "Gigante de Arroyito",
+        "address": "Av. Génova 640",
+        "description": "The Gigante de Arroyito stadium is a World Cup venue owned by Club Atlético Rosario Central. FIFA designated it as one of the venues for the 1978 World Cup, held in Argentina. This makes it the only stadium in the province of Santa Fe to have hosted a senior World Cup."
+    },
+    {
+        "title": "Theater El Circulo",
+        "address": "Laprida 1223",
+        "description": "The Circle is one of the city's leading opera houses. It is renowned for the acoustics of its main hall."
+    },
+    {
+        "title": "San Martin Square",
+        "address": "Mariano Moreno Centro",
+        "description": "Plaza San Martín is a square named in honor of General José de San Martín, hero of the Argentine War of Independence."
+    }
+]
