@@ -97,8 +97,10 @@
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 
-    .place-card:hover {
-        transform: translateY(-4px);
+    .place-card img:hover {
+        transform: scale(1.05);
+        transition: transform 0.2s ease;
+        border: 2px solid var(--secondary-accent-color);
     }
 
     .place-card button:hover {

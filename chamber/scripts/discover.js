@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
             li.innerHTML = `
                 <h2>${place.title}</h2>
                 <figure>
-                    <img src="${place.image}" alt="${place.title}">
+                    <img src="${place.image}" alt="${place.title}" loading="lazy">
                 </figure>
                 <address>${place.address}</address>
                 <p>${place.description}</p>
