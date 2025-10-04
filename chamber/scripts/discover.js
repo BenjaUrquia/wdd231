@@ -48,6 +48,5 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    // Store the current visit time
     localStorage.setItem("lastVisit", now);
 });

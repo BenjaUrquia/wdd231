@@ -619,7 +619,7 @@ dialog::backdrop {
     grid-template-rows: auto auto auto 2fr auto;
     gap: 1rem;
     align-content: space-between;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     color: var(--text-light);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -629,7 +629,7 @@ dialog::backdrop {
 .place-card figure img {
     width: 100%;
     border-radius: 8px;
-    border: 1px solid var(--text-dark);
+    border: 1px solid var(--text-light);
 }
 
 .place-card button {
